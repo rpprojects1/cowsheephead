@@ -1,0 +1,35 @@
+
+1) go to directory
+
+2) install python 
+https://docs.python.org/3/using/windows.html
+
+3) install all dependencies and libraries
+https://docs.python.org/3/using/windows.html
+
+
+# cow_sheep_head.pt is weights of model.
+
+
+Now you're all set to test cow_sheep_head detection model
+
+a) for testing model on an img run command
+
+python detect.py --weights 'path of weights' --source 'path of image'
+
+b) for testing model on multiple images present inside a folder
+
+python detect.py --weights 'path of weights' --source 'folder_path'
+
+c) for testing model on any video, you tube video, rtsp stream
+
+python detect.py --weights 'path of weights' --source   'path of video'  # video
+                            				'https://youtu.be/Zgi9g1ksQHc'  # YouTube
+                            				'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
+
+replace 'path of weights' and 'path of image'
+
+for example, you want to test model on single image and its path in your local directory is 'content/1.jpg' and 
+path of weights is 'cow_sheep_head.pt', so you need to run command 
+
+python detect.py --source content/1.jpg --weights cow_sheep_head.pt

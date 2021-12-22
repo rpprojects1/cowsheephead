@@ -1,0 +1,5 @@
+train: /content/drive/MyDrive/yolov5_sheep_detection2/dataset/images/train
+val: /content/drive/MyDrive/yolov5_sheep_detection2/dataset/images/val
+
+nc: 3
+names: ["Cow", "Sheep", "Sheep_head"]
